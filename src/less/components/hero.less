@@ -1,0 +1,111 @@
+/* HERO PANEL / INICIO */
+
+    #inicio {
+        padding: 5rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        max-width: 1000px;
+        margin: 0 auto;
+
+        /* Animación de entrada al cargar la página */
+        animation: fadeInUp 0.8s ease both;
+    }
+
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .hero-foto {
+        flex-shrink: 0;
+    }
+
+    .hero-foto img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: 4px solid @azul;
+        object-fit: scale-down;
+        background-color: black;
+
+        box-shadow: 0 0 0 8px @azul-claro;
+        transition: box-shadow 0.5s ease-in-out,
+            transform 0.5s ease-in-out;
+    }
+
+    .hero-foto img:hover {
+        box-shadow: 0 0 25px 4px @azul;
+    }
+
+    .hero-foto img:hover {
+        transform: scale(1.25);
+    }
+
+    .hero-texto h1 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 0.4rem;
+    }
+
+    .hero-texto h1 span {
+        color: @azul;
+    }
+
+    .hero-texto .subtitulo {
+        font-size: 1rem;
+        color: @gris;
+        margin-bottom: 1.2rem;
+        font-weight: 400;
+    }
+
+    .hero-texto p {
+        font-size: 0.95rem;
+        color: @gris;
+        max-width: 440px;
+        margin-bottom: 1.8rem;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 0.7rem 1.6rem;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .btn-primario {
+        background-color: @azul;
+        color: @blanco;
+        border: 2px solid @azul;
+    }
+
+    .btn-primario:hover {
+        background-color: transparent;
+        color: @azul;
+    }
+
+    .btn-secundario {
+        background-color: transparent;
+        color: @azul;
+        border: 2px solid @azul;
+        margin-left: 0.8rem;
+    }
+
+    .btn-secundario:hover {
+        background-color: @azul;
+        color: @blanco;
+    }

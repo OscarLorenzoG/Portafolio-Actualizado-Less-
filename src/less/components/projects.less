@@ -1,0 +1,105 @@
+/* PROYECTOS */
+
+    .proyectos-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .proyecto-card {
+        background: @blanco;
+        border: 1px solid @borde;
+        border-radius: @radio;
+        overflow: hidden;
+        box-shadow: @sombra;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .proyecto-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
+    }
+
+    .proyecto-imagen {
+        height: 150px;
+        position: relative;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ico img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        opacity: 100%;
+        width: 64px;
+        height: 64px;
+
+        background-color: rgba(97, 102, 98, 0.811);
+        border-radius: 4px;
+
+        margin: 0;
+
+        box-shadow: 0 0 6px 2px @azul-claro;
+
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .ico img:hover{
+        transform: scale(1.2);
+    }
+
+    .proyecto-imagen::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: inherit;
+        background-size: cover;
+        background-position: center;
+
+        filter: blur(1.5px);
+
+        transform: scale(1.1);
+
+        z-index: 1;
+    }
+
+    .proyecto-cuerpo {
+        padding: 1.3rem;
+    }
+
+    .proyecto-cuerpo h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.4rem;
+    }
+
+    .proyecto-cuerpo p {
+        font-size: 0.83rem;
+        color: @gris;
+        margin-bottom: 1rem;
+    }
+
+    .etiquetas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    .etiqueta {
+        background-color: @azul-claro;
+        color: @azul;
+        font-size: 0.72rem;
+        font-weight: 500;
+        padding: 0.2rem 0.6rem;
+        border-radius: 20px;
+    }

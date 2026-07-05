@@ -1,0 +1,63 @@
+/* Habilidades */
+
+    #habilidades {
+        background-color: @blanco;
+        max-width: 100%;
+        padding: 4rem 0;
+    }
+
+    #habilidades>* {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .skill-icono img {
+        width: 48px;
+        height: 48px;
+        margin: 0 auto;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 2rem;
+
+    }
+
+    .skill-card {
+        background: @fondo;
+        border: 1px solid @borde;
+        border-radius: @radio;
+        padding: 1.4rem;
+        text-align: center;
+
+        transition: box-shadow 0.3s ease-in-out,
+            border-color 0.3s ease-in-out;
+    }
+
+    .skill-card:hover {
+        box-shadow: @sombra;
+        border-color: @azul;
+    }
+
+    .skill-icono {
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .skill-card h3 {
+        font-size: 0.95rem;
+        font-weight: 600;
+        margin-bottom: 0.3rem;
+    }
+
+    .skill-card p {
+        font-size: 0.78rem;
+        color: @gris;
+    }

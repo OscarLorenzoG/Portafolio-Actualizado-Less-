@@ -1,0 +1,64 @@
+/* SOBRE MI */
+
+    #sobre-mi {
+        background: @blanco;
+        max-width: 100%;
+        padding: 4rem 0;
+    }
+
+    #sobre-mi>* {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .sobre-contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .sobre-texto p {
+        font-size: 0.93rem;
+        color: @gris;
+        margin-bottom: 1rem;
+    }
+
+    .datos-lista {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+    }
+
+    .datos-lista li {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .datos-lista .icono {
+        font-size: 1.1rem;
+        width: 36px;
+        height: 36px;
+        background-color: @azul-claro;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    .datos-lista strong {
+        display: block;
+        font-size: 0.75rem;
+        color: @gris;
+        font-weight: 400;
+    }

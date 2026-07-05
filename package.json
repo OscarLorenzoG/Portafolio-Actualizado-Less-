@@ -1,0 +1,16 @@
+{
+  "name": "portafolio-odlg-vite-less",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "less": "^4.6.7",
+    "vite": "^8.1.1",
+    "vite-plugin-purgecss": "^0.2.13"
+  }
+}

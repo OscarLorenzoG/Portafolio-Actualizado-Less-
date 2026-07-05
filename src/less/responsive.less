@@ -1,0 +1,33 @@
+/* RESPONSIVE MOBIL */
+
+    @media (max-width: 700px) {
+        #inicio {
+            flex-direction: column;
+            text-align: center;
+            gap: 2rem;
+            padding: 3rem 1.5rem;
+        }
+
+        .hero-texto p {
+            margin: 0 auto 1.5rem;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .sobre-contenido,
+        .contacto-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .fila-doble {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 900px){
+        .nav-links li a{
+            display: none;
+        }
+    }
